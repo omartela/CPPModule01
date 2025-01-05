@@ -1,0 +1,3 @@
+Remove all spaces.
+This is a simple test with spaces.
+We should remove spaces.
