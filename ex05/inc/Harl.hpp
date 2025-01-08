@@ -21,8 +21,10 @@ class Harl
 		void info(void);
 		void warning(void);
 		void error(void);
-		void defcase(void);
+		static void (Harl::*functions[])();
+    	static std::string levels[];
 	public:
 		Harl();
 		void complain(std::string level);
+		void defcase();
 };

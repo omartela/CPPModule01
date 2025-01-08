@@ -50,20 +50,20 @@ int main(int argc, char **argv)
         std::cerr << "Wrong number of arguments, argc != 4" << std::endl;
         return (1);
     }
+    s1 = argv[2];
+    s2 = argv[3];
     if (s1.empty()) 
     {
         std::cerr << "Error: String s1 cannot be empty." << std::endl;
         return (1);
     }
-    s1 = argv[2];
-    s2 = argv[3];
     infilename = argv[1];
     file1.open(infilename);
     if (file1.is_open())
     {
         file_path = infilename;
         outfilename = file_path.stem();
-        std::filesystem::rename(outfilename, outfilename + ".replace");
+        outfilename = outfilename + ".replace";
         file2.open(outfilename);
     }
     else

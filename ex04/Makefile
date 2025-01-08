@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-COMPILER = g++
+COMPILER = c++
 
 TARGET = "Sed is for losers"
 SRC = src/main.cpp
