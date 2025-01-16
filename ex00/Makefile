@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 
-COMPILER = g++
+COMPILER = c++
 
 TARGET = BraiiiiiiinnnzzzZ
 INC_DIR = inc
@@ -28,6 +28,9 @@ $(TARGET): $(OBJ)
 	$(COMPILER) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) $(TARGET)
+	rm -f $(OBJ)
+
+fclean: clean
+	rm -f $(TARGET)
 
 re: fclean all
