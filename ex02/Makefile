@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-COMPILER = g++
+COMPILER = c++
 
 TARGET = "HI THIS IS BRAIN"
 SRC = src/main.cpp
