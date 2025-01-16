@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-COMPILER = g++
+COMPILER = c++
 
 TARGET = "Unnecessary violence"
 INC_DIR = inc
