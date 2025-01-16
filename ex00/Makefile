@@ -17,7 +17,7 @@ TARGET = BraiiiiiiinnnzzzZ
 INC_DIR = inc
 SRC = src/main.cpp src/newZombie.cpp src/Zombie.cpp src/randomChump.cpp
 OBJ = $(SRC:.cpp=.o)
-CFLAGS = -Wall -Wextra -I$(INC_DIR)
+CFLAGS = -Wall -Wextra -Werror -I$(INC_DIR)
 
 all: $(TARGET)
 

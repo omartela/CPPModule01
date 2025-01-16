@@ -16,7 +16,7 @@ TARGET = "Moar brainz!"
 INC_DIR = inc
 SRC = src/main.cpp src/Zombie.cpp src/zombieHorde.cpp
 OBJ = $(SRC:.cpp=.o)
-CFLAGS = -Wall -Wextra -I$(INC_DIR)
+CFLAGS = -Wall -Wextra -Werror -I$(INC_DIR)
 
 all: $(TARGET)
 

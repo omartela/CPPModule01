@@ -15,7 +15,7 @@ COMPILER = c++
 TARGET = "Sed is for losers"
 SRC = src/main.cpp
 OBJ = $(SRC:.cpp=.o)
-CFLAGS = -Wall -Wextra
+CFLAGS = -Wall -Wextra -Werror
 
 all: $(TARGET)
 

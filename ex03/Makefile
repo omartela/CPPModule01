@@ -16,7 +16,7 @@ TARGET = "Unnecessary violence"
 INC_DIR = inc
 SRC = src/main.cpp src/HumanA.cpp src/HumanB.cpp src/Weapon.cpp
 OBJ = $(SRC:.cpp=.o)
-CFLAGS = -Wall -Wextra -I$(INC_DIR)
+CFLAGS = -Wall -Wextra -Werror -I$(INC_DIR)
 
 all: $(TARGET)
 
