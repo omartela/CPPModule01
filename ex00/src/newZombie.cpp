@@ -14,6 +14,14 @@
 
 Zombie* newZombie(std::string name)
 {
-    Zombie *newZombie = new Zombie(name);
-    return (newZombie);
+    try 
+    {
+        Zombie *newZombie = new Zombie(name);
+        return (newZombie);
+    } 
+    catch (const std::bad_alloc& e)
+    {
+        std::cerr << "Memory allocation failed: " << e.what() << std::endl;
+        return nullptr;
+    }
 }
