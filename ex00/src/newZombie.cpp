@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/Zombie.h"
+#include "../inc/Zombie.hpp"
 
 Zombie* newZombie(std::string name)
 {

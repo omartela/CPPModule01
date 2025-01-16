@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #pragma once
-#define ZOMBIE_HPP
 #include <string>
 #include <iostream>
 
@@ -25,3 +24,5 @@ class Zombie
         ~Zombie();
     void    announce(void);
 };
+
+Zombie* zombieHorde(int N, std::string name);
